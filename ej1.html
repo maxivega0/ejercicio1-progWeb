@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ejercicio1</title>
+</head>
+
+<body>
+    <div class="enunciado">
+        <h1>Ejercicio 1</h1>
+        <p>Crear una tabla y agregar mediante un script nuevos items debajo.</p>
+    </div>
+    <section>
+        <form class="formulario" onsubmit="altaNombre(event)">
+            <div class="labelForm">
+                <label for="nombre">Ingrese su nombre: </label>
+                <input type="text" id="nombre" required>
+            </div>
+            <div class="labelForm">
+                <label for="">Ingrese su apellido: </label>
+                <input type="text" id="apellido" required>
+            </div>
+            <button type="submit">Añadir</button>
+        </form>
+    </section>
+    <section class="sectionTabla">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Apellido</th>
+                </tr>
+            </thead>
+            <tbody id="tablaNombre">
+
+            </tbody>
+        </table>
+    </section>
+    <script src="js/ejTabla.js"></script>
+</body>
+
+</html>
